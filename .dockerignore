@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+venv/
+.git/
+.pytest_cache/
+tests/
+.vscode/
+.idea/
+*.md
+.gitignore
+test_*.py
