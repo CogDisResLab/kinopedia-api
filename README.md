@@ -4,12 +4,12 @@ Backend API for kinase database built with FastAPI.
 
 ## Features
 
-- ✅ RESTful API for kinase data
-- ✅ 8 kinases with ~15,000 substrates from KEA3
-- ✅ Automatic API documentation (Swagger UI)
-- ✅ Business logic enforcement (STK33 pseudokinase, CASK disputed status)
-- ✅ Docker deployment ready
-- ✅ 70%+ test coverage
+-  RESTful API for kinase data
+-  8 kinases with ~15,000 substrates from KEA3
+-  Automatic API documentation (Swagger UI)
+-  Business logic enforcement (STK33 pseudokinase, CASK disputed status)
+-  Docker deployment ready
+-  70%+ test coverage
 
 ## Quick Start
 
@@ -17,7 +17,7 @@ Backend API for kinase database built with FastAPI.
 
 ```cmd
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/kinopedia-api.git
+git clone https://github.com/CogDisResLab/kinopedia-api
 cd kinopedia-api
 
 # Create virtual environment
@@ -119,7 +119,7 @@ pytest tests\ -v
 pytest tests\ --cov=app --cov-report=term-missing
 ```
 
-Current coverage: 75%+
+Current coverage: 88%
 
 ## Database
 
