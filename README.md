@@ -127,24 +127,33 @@ Currently uses SQLite (`kinopedia.db`) for simplicity and portability.
 
 For PostgreSQL setup in production, see [POSTGRESQL_SETUP.md](POSTGRESQL_SETUP.md).
 
-##  Project Structure
+## Project Structure
 
+```
 kinopedia-api/
-├── app/
-│   ├── main.py              # FastAPI application
-│   ├── database.py          # Database connection (async)
+├── app/                     # Application code
+│   ├── __init__.py
+│   ├── main.py              # FastAPI app initialization
+│   ├── database.py          # Async database connection
 │   ├── models.py            # SQLAlchemy ORM models
 │   ├── schemas.py           # Pydantic validation schemas
-│   └── routers/
+│   └── routers/             # API route handlers
+│       ├── __init__.py
 │       ├── kinases.py       # Kinase endpoints
 │       ├── substrates.py    # Substrate endpoints
 │       └── structures.py    # Structure endpoints
-├── tests/                   # Unit tests (pytest)
-├── kinopedia.db             # SQLite database
-├── Dockerfile               # Docker configuration
-├── docker-compose.yml       # Docker Compose setup
-├── requirements.txt         # Python dependencies
-└── README.md                # This file
+├── tests/                   # Unit tests
+│   ├── __init__.py
+│   ├── test_kinases.py
+│   └── test_substrates.py
+├── kinopedia.db             # SQLite database (8 kinases, ~15K substrates)
+├── Dockerfile               # Docker container configuration
+├── docker-compose.yml       # Docker Compose orchestration
+├── requirements.txt         # Python package dependencies
+├── pytest.ini               # Pytest configuration
+├── .gitignore               # Git ignore rules
+└── README.md                # Project documentation
+```
 
 ## Technology Stack
 
